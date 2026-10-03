@@ -32,12 +32,15 @@ $$
 After main-career retirement, the current implementation sets main-career income to zero and, for the entered second-career duration, uses a **constant** annual second-career income $H_0$:
 
 $$
-Y_y =
-\begin{cases}
-Y_0(1+g)^y, & a<a_r \\
-H_0, & a_r \le a < a_r+q \\
-0, & a \ge a_r+q
-\end{cases}
+Y_y = Y_0(1+g)^y \quad \text{if } a<a_r
+$$
+
+$$
+Y_y = H_0 \quad \text{if } a_r \le a < a_r+q
+$$
+
+$$
+Y_y = 0 \quad \text{if } a \ge a_r+q
 $$
 
 The v1.0.0 code does **not** apply a separate growth rate to second-career income.
@@ -367,11 +370,11 @@ $$
 and before retirement:
 
 $$
-CorpusPenalty=
-\begin{cases}
-20, & Corpus<AnnualIncome\\
-5, & \text{otherwise}
-\end{cases}
+CorpusPenalty = 20 \quad \text{if } Corpus < AnnualIncome
+$$
+
+$$
+CorpusPenalty = 5 \quad \text{otherwise}
 $$
 
 After retirement the implementation contributes zero for this last term because the condition is pre-retirement only.
