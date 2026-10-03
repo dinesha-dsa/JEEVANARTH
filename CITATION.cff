@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use JEEVANARTH in research or teaching, please cite the software."
+title: "JEEVANARTH: Life Independence Decision-Support System"
+type: software
+authors:
+  - family-names: "Auti"
+    given-names: "Dinesh"
+version: "1.0.0"
+date-released: "2026-10-03"
+license: "MIT"
+repository-code: "https://github.com/dinesha-dsa/JEEVANARTH"
+url: "https://dinesha-dsa.github.io/JEEVANARTH/"
+abstract: >-
+  JEEVANARTH is a bilingual, privacy-first, browser-based educational and
+  research-oriented Life Independence Decision-Support System exploring
+  household cash flow, debt, education goals, retirement readiness,
+  human capital, and broader life-independence preparedness.
+keywords:
+  - life independence
+  - retirement planning
+  - financial literacy
+  - decision support system
+  - personal finance
+  - human capital
+  - Marathi
+  - India
